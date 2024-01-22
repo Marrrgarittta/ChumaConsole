@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChumaConsole", "ChumaConsole\ChumaConsole.csproj", "{57D494A2-7F26-45C0-A7FA-D01325EB3077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chuma_Tests", "Chuma_Tests\Chuma_Tests.csproj", "{F51C7C38-6B84-40F5-8A80-B1C134AC2ACD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57D494A2-7F26-45C0-A7FA-D01325EB3077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D494A2-7F26-45C0-A7FA-D01325EB3077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D494A2-7F26-45C0-A7FA-D01325EB3077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D494A2-7F26-45C0-A7FA-D01325EB3077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F51C7C38-6B84-40F5-8A80-B1C134AC2ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F51C7C38-6B84-40F5-8A80-B1C134AC2ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F51C7C38-6B84-40F5-8A80-B1C134AC2ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F51C7C38-6B84-40F5-8A80-B1C134AC2ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C27B580-DCCB-4616-8C81-8B304A49247B}
+	EndGlobalSection
+EndGlobal
