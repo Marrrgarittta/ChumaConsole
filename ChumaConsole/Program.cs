@@ -1,4 +1,5 @@
 ﻿using ChumaConsole.ChumaClasses;
+using Newtonsoft.Json;
 using System;
 
 namespace ChumaConsole
@@ -25,6 +26,9 @@ namespace ChumaConsole
                 Console.WriteLine($"Person 2: ({person2.X}, {person2.Y}), Infected: {person2.IsInfected}");
                 Console.WriteLine($"Doctor: ({doctor.X}, {doctor.Y})");
             }
+
+            var json = doctor.SerializeToJson();
+            var deserializedВoctor = JsonConvert.DeserializeObject<Person>(json);
         }
     }
 }
