@@ -15,7 +15,8 @@ namespace ChumaConsole.ChumaClasses
             // если переданный человек заражен, то он излечивается
             if (person.IsInfected)
             {
-                person.SetInfectedState(false);
+               // person.SetInfectedState(false);
+               person.IsInfected = false;
             }
         }
 

@@ -50,7 +50,8 @@ namespace ChumaUnitTest.ChumaClasses_Test
             // arrange 
             Person person = new Person(1, 4, 3, isInfected: false, Guid.NewGuid());
             // act
-            person.SetInfectedState(true);
+            person.IsInfected = true;
+            //   person.SetInfectedState(true);
             // assert            
             Assert.IsTrue(person.IsInfected);
         }
@@ -61,7 +62,8 @@ namespace ChumaUnitTest.ChumaClasses_Test
             // arrange 
             Person person = new Person(1, 4, 3, isInfected: true, Guid.NewGuid());
             // act
-            person.SetInfectedState(false);
+            person.IsInfected = false;
+            // person.SetInfectedState(false);
             // assert            
             Assert.IsFalse(person.IsInfected);
         }

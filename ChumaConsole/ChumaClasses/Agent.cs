@@ -5,9 +5,51 @@ namespace ChumaConsole.ChumaClasses
     public abstract class Agent : IEquatable<Agent>
     {
         public readonly Guid id; // уникальный идентификатор агента
-        public int X { get; set; } // координата X
-        public int Y { get; set; } // координата Y
-        public int Speed { get; set; } // скорость перемещения
+        private int _x;
+
+        public int X // координата X
+        {
+            get => _x;
+            set
+            {
+                if (value > 0)
+                    _x = value;
+                else
+                    throw new ArgumentException("Координата X у агента по логике нашей программы, не может быть отрицательной!");
+            }
+        }
+
+        private int _y;
+
+        public int Y // координата Y
+        {
+            get => _y;
+            set
+            {
+                if (value > 0)
+                    _y = value;
+                else
+                    throw new ArgumentException("Координата Y у агента по логике нашей программы, не может быть отрицательной!");
+            }
+        }
+
+        private int _speed;
+        public int Speed // скорость перемещения
+        {
+            get => _speed;
+            set
+            {
+                if (value > 0)
+                {
+                    if (value < 100)
+                        _speed = value;
+                    else
+                        throw new ArgumentException("Скорость агента по логике нашей программы, не может быть более 100 единиц!");
+                }
+                else
+                    throw new ArgumentException("Скорость по логике нашей программы, не может быть отрицательной!");
+            }
+        }
 
         public Agent(int x, int y, int speed, Guid id)
             => (X, Y, Speed, this.id) = (x, y, speed, id);
